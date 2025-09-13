@@ -349,6 +349,7 @@ namespace emakefun {
             return null;
         }
         const topic = serial.readUntil('"');
+        basic.showNumber(61);
         if (!emakefun.skipNext(",")) {
             return null;
         }
@@ -356,7 +357,7 @@ namespace emakefun {
         if (isNaN(length) || length <= 0) {
             return null;
         }
-        basic.showNumber(66)
+        basic.showNumber(66);
         let received_data = "";
         let received_data_length = 0;
         const end_time = input.runningTime() + 1000;
