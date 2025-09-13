@@ -353,6 +353,7 @@ namespace emakefun {
         if (!emakefun.skipNext(",")) {
             return null;
         }
+        basic.showNumber(62);
         const length = emakefun.parseNumber(500);
         if (isNaN(length) || length <= 0) {
             return null;
