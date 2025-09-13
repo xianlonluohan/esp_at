@@ -235,7 +235,7 @@ namespace emakefun {
     }
 
     /**
-     * Connect to MQTT server.
+     * MQTT to connect server.
      * @param host Server host.
      * @param port Server port. 
      * @param reconnect Whether to enable automatically reconnect.
@@ -287,7 +287,7 @@ namespace emakefun {
     }
 
     /**
-     * Subscribe to MQTT topic.
+     * MQTT subscribe topic.
      * @param topic MQTT topic.
      * @param qos QoS level.
      */
@@ -306,7 +306,7 @@ namespace emakefun {
     }
 
     /**
-     * Unsubscribe from MQTT topic.
+     * MQTT unsubscribe topic.
      * @param topic MQTT topic.
      */
     //% block="MQTT unsubscribe topic $topic"
@@ -321,7 +321,7 @@ namespace emakefun {
     }
 
     /**
-     * Disconnect MQTT connection.
+     * MQTT disconnect connection.
      */
     //% block="MQTT disconnect connection"
     //% subcategory="EspAt"
@@ -356,6 +356,7 @@ namespace emakefun {
         if (isNaN(length) || length <= 0) {
             return null;
         }
+        basic.showNumber(66)
         let received_data = "";
         let received_data_length = 0;
         const end_time = input.runningTime() + 1000;
